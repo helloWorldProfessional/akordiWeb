@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AKORDI</title>
+</head>
+<script type = "text/javascript" src="javascript.js">
+
+</script>
+
+</script>
+<body>
+    <div class="header">
+        <h1 style="text-align: center;">AKORDI</h1>
+    </div>
+    <div class="container">
+        <div class="input-div">
+            <h2 style="text-align: center;">PRETRAŽI</h2>
+            <label id="div-label">TONALITET</label>
+            <input list="chordN" name="fname" id="chordName">
+            <datalist id="chordN">
+                <option value="E">
+                <option value="A">
+                <option value="D">
+                <option value="G">
+                <option value="B">
+                <option value="C">
+                <option value="F">
+            </datalist>
+            <label id="div-label">SKALA</label>
+            <input list="chordScale" name="fname" id="scale">
+            <datalist id="chordScale">
+                <option value="sus2">
+                <option value="sus4">
+                <option value="maj7">
+                <option value="m">
+                <option value="dim">
+                <option value="b">
+            </datalist>
+            <label id="div-label">INTERVAL</label>
+            <input list="chordInterval" name="fname" id="interval">
+            <datalist id="chordInterval">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="7b5">
+            </datalist>
+            <button class="btn" onclick="getChord();">
+                PRETRAŽI 
+            </button-->
+            
+        </div>
+        <div class="result-tab">
+            <h2 style="text-align: center;font-size: medium;">TAB</h2>
+            <div id="strings" style="background-color: none; ">
+
+            </div>
+            
+        </div>
+        <div class="result-pp">
+            <h2 style="text-align: center; font-size: medium;">PICKING PATTERN</h2>
+            <div id="fingering" style="background-color: none; ">
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p style="text-align: center;">Prikaz akorda</p>
+    </div>
+</body>
+</html>

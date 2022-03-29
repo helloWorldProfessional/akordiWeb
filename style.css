@@ -1,0 +1,159 @@
+body{
+    background-color: #3D5B59;
+    width: inherit;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.header{
+    width: inherit;
+    height: fit-content;
+    background-color: #B5E5CF;
+    padding: 5px;
+}
+.header h1{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+}
+.container{
+    display: flex;
+    background-color: none;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: auto;
+    align-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.input-div{
+    display: grid;
+    row-gap: 5px;
+    background-color: #B5E5CF;
+    width:fit-content;
+    padding: 20px 50px 30px 50px;
+    margin-left: auto;
+    align-self: flex-start;
+    /*border-style: double;
+    border-color: lightskyblue;*/
+}
+.input-div #div-label{
+    color: #3D5B59;
+    margin-left: 10%;
+    text-align: left;
+    
+}
+.input-div #div-value{
+    width: inherit;
+    height: 20px;
+    margin-right: 30%;
+    margin-left: auto;
+}
+.input-div .btn{
+    width: fit-content;
+    margin-right: 10%;
+    margin-left: auto;
+    padding: 3px 5px 3px 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.result-tab{
+    display: grid;
+    background-color: #B5E5CF;
+    width: 20%;
+    height: 330px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.result-pp{
+    display: grid;
+    background-color: #B5E5CF;
+    width: 20%;
+    height: 330px;
+    margin-right: auto;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+#strings, #fingering{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-size: 20px;
+	color: black;
+}
+
+.footer{
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    width: 98%;
+    bottom: 0;
+    height: fit-content;
+    background-color: #B5E5CF;
+    
+}
+
+
+@media screen and (max-width: 950px) {
+  
+    .container{
+        display: block;
+           
+    }
+    .input-div {
+        padding: 0;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .result-tab { 
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 15%;
+        margin-right: 15%;/* The width is 100%, when the viewport is 800px or smaller */
+        
+    }
+    .result-pp { 
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 15%;
+        margin-right: 15%;/* The width is 100%, when the viewport is 800px or smaller */
+        
+    }
+    
+    .input-div #div-label{
+        width: fit-content;
+        height: 20px;
+        margin-left: 30%;
+        text-align: left;
+    }
+    .input-div #chordName,#scale,#interval{
+        width: 40%;
+        height: 20px;
+        margin-right: 30%;
+        margin-left: auto;
+    }
+    
+    .input-div .btn{
+        width: fit-content;
+        margin-right: 25%;
+        margin-left: auto;
+        padding: 3px 5px 3px 5px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        
+    }
+   
+    .footer{
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        width: 98%;
+        height: fit-content;
+        bottom: auto;
+    }
+    
+}
